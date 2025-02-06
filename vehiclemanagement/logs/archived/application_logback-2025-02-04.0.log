@@ -1,0 +1,1643 @@
+2025-02-04 10:22:34 [main] INFO  : Starting VehiclemanagementApplication using Java 21.0.2 with PID 30692 (D:\sample_projects\vehiclemanagement\build\classes\java\main started by vaisakh.devi in D:\sample_projects\vehiclemanagement)
+2025-02-04 10:22:34 [main] INFO  : No active profile set, falling back to 1 default profile: "default"
+2025-02-04 10:22:36 [main] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-04 10:22:36 [main] INFO  : Finished Spring Data repository scanning in 118 ms. Found 1 JPA repository interface.
+2025-02-04 10:22:37 [main] INFO  : Tomcat initialized with port 8080 (http)
+2025-02-04 10:22:37 [main] INFO  : Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-04 10:22:37 [main] INFO  : Starting service [Tomcat]
+2025-02-04 10:22:37 [main] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-04 10:22:37 [main] INFO  : Initializing Spring embedded WebApplicationContext
+2025-02-04 10:22:37 [main] INFO  : Root WebApplicationContext: initialization completed in 2445 ms
+2025-02-04 10:22:38 [main] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-04 10:22:38 [main] INFO  : HikariPool-1 - Starting...
+2025-02-04 10:22:38 [main] INFO  : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:vehicle user=SA
+2025-02-04 10:22:38 [main] INFO  : HikariPool-1 - Start completed.
+2025-02-04 10:22:40 [main] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-04 10:22:41 [main] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-04 10:22:41 [main] INFO  : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-02-04 10:22:42 [main] INFO  : H2 console available at '/h2-ui'. Database available at 'jdbc:h2:mem:vehicle'
+2025-02-04 10:22:42 [main] WARN  : You are asking Spring Security to ignore Ant [pattern='/h2-ui/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-02-04 10:22:42 [main] INFO  : Starting ProtocolHandler ["http-nio-8080"]
+2025-02-04 10:22:43 [main] INFO  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-04 10:22:43 [main] INFO  : Started VehiclemanagementApplication in 9.212 seconds (process running for 10.413)
+2025-02-04 10:33:26 [http-nio-8080-exec-4] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-04 10:33:26 [http-nio-8080-exec-4] INFO  : Initializing Servlet 'dispatcherServlet'
+2025-02-04 10:33:26 [http-nio-8080-exec-4] INFO  : Completed initialization in 2 ms
+2025-02-04 10:33:27 [http-nio-8080-exec-4] INFO  : Vehicle creation request com.gpc.vehiclemanagement.request.VehicleRequest@7bb5e87d
+2025-02-04 10:33:28 [http-nio-8080-exec-4] INFO  : Vehicle creation response Vehicle [vehicleId=VehicleId [vehicleMake=Maruti, vehicleYear=2028, model=Baleno], submodel=Delta, createdBy=user]
+2025-02-04 10:34:24 [http-nio-8080-exec-5] INFO  : Vehicle creation request com.gpc.vehiclemanagement.request.VehicleRequest@4385f5c3
+2025-02-04 10:34:24 [http-nio-8080-exec-5] INFO  : Vehicle creation response Vehicle [vehicleId=VehicleId [vehicleMake=Maruti, vehicleYear=2028, model=Baleno], submodel=Delta, createdBy=user]
+2025-02-04 10:34:56 [http-nio-8080-exec-7] INFO  : Vehicle creation request com.gpc.vehiclemanagement.request.VehicleRequest@3d69fecc
+2025-02-04 10:34:56 [http-nio-8080-exec-7] INFO  : Vehicle creation response Vehicle [vehicleId=VehicleId [vehicleMake=Maruti, vehicleYear=2028, model=Baleno], submodel=Delta, createdBy=user]
+2025-02-04 10:36:13 [http-nio-8080-exec-1] INFO  : Vehicle update request com.gpc.vehiclemanagement.request.VehicleRequest@67d93c71
+2025-02-04 10:36:13 [http-nio-8080-exec-1] INFO  : Get Vehicle response Vehicle [vehicleId=VehicleId [vehicleMake=Maruti, vehicleYear=2028, model=Baleno], submodel=zeta, createdBy=user]
+2025-02-04 10:36:38 [http-nio-8080-exec-4] INFO  : Vehicle update request com.gpc.vehiclemanagement.request.VehicleRequest@59b82b3e
+2025-02-04 10:37:27 [http-nio-8080-exec-8] INFO  : Find All Vehicle method
+2025-02-04 10:37:57 [http-nio-8080-exec-7] INFO  : Find Vehicle by id request model Baleno, year 2027, make Maruti
+2025-02-04 10:38:25 [http-nio-8080-exec-1] INFO  : Vehicle creation request com.gpc.vehiclemanagement.request.VehicleRequest@27bd24c9
+2025-02-04 10:38:25 [http-nio-8080-exec-1] INFO  : Vehicle creation response Vehicle [vehicleId=VehicleId [vehicleMake=Maruti, vehicleYear=2028, model=Alto], submodel=Delta, createdBy=user]
+2025-02-04 10:38:49 [http-nio-8080-exec-9] INFO  : Vehicle creation request com.gpc.vehiclemanagement.request.VehicleRequest@574d0e57
+2025-02-04 10:38:49 [http-nio-8080-exec-9] INFO  : Vehicle creation response Vehicle [vehicleId=VehicleId [vehicleMake=Nissan, vehicleYear=2028, model=Magnite], submodel=XS, createdBy=user]
+2025-02-04 10:39:08 [http-nio-8080-exec-3] INFO  : Find All Vehicle method
+2025-02-04 10:41:01 [http-nio-8080-exec-2] INFO  : Delete Vehicle request model Baleno, year 2028, make Maruti
+2025-02-04 10:41:27 [http-nio-8080-exec-5] INFO  : Delete Vehicle request model Baleno, year 2028, make Maruti
+2025-02-04 10:44:15 [http-nio-8080-exec-3] INFO  : Vehicle creation request com.gpc.vehiclemanagement.request.VehicleRequest@146669c9
+2025-02-04 10:44:15 [http-nio-8080-exec-3] INFO  : Vehicle creation response Vehicle [vehicleId=VehicleId [vehicleMake=Nissan, vehicleYear=2028, model=Magnite], submodel=XS, createdBy=user]
+2025-02-04 10:53:48 [main] INFO  : Starting VehiclemanagementApplication using Java 21.0.2 with PID 19340 (D:\sample_projects\vehiclemanagement\build\classes\java\main started by vaisakh.devi in D:\sample_projects\vehiclemanagement)
+2025-02-04 10:53:48 [main] INFO  : No active profile set, falling back to 1 default profile: "default"
+2025-02-04 10:53:49 [main] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-04 10:53:49 [main] INFO  : Finished Spring Data repository scanning in 86 ms. Found 1 JPA repository interface.
+2025-02-04 10:53:50 [main] INFO  : Tomcat initialized with port 8080 (http)
+2025-02-04 10:53:50 [main] INFO  : Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-04 10:53:50 [main] INFO  : Starting service [Tomcat]
+2025-02-04 10:53:50 [main] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-04 10:53:51 [main] INFO  : Initializing Spring embedded WebApplicationContext
+2025-02-04 10:53:51 [main] INFO  : Root WebApplicationContext: initialization completed in 2658 ms
+2025-02-04 10:53:51 [main] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-04 10:53:51 [main] INFO  : HikariPool-1 - Starting...
+2025-02-04 10:53:52 [main] INFO  : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:vehicle user=SA
+2025-02-04 10:53:52 [main] INFO  : HikariPool-1 - Start completed.
+2025-02-04 10:53:52 [main] ERROR : Failed to initialize JPA EntityManagerFactory: Property 'com.gpc.vehiclemanagement.model.Vehicle.id' is annotated @GeneratedValue but is not part of an identifier
+2025-02-04 10:53:52 [main] WARN  : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Property 'com.gpc.vehiclemanagement.model.Vehicle.id' is annotated @GeneratedValue but is not part of an identifier
+2025-02-04 10:53:52 [main] INFO  : HikariPool-1 - Shutdown initiated...
+2025-02-04 10:53:52 [main] INFO  : HikariPool-1 - Shutdown completed.
+2025-02-04 10:53:52 [main] INFO  : Stopping service [Tomcat]
+2025-02-04 10:53:52 [main] INFO  : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-04 10:53:52 [main] ERROR : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Property 'com.gpc.vehiclemanagement.model.Vehicle.id' is annotated @GeneratedValue but is not part of an identifier
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.gpc.vehiclemanagement.VehiclemanagementApplication.main(VehiclemanagementApplication.java:9)
+Caused by: org.hibernate.AnnotationException: Property 'com.gpc.vehiclemanagement.model.Vehicle.id' is annotated @GeneratedValue but is not part of an identifier
+	at org.hibernate.boot.model.internal.EntityBinder.processIdPropertiesIfNotAlready(EntityBinder.java:1085)
+	at org.hibernate.boot.model.internal.EntityBinder.handleIdentifier(EntityBinder.java:419)
+	at org.hibernate.boot.model.internal.EntityBinder.bindEntityClass(EntityBinder.java:251)
+	at org.hibernate.boot.model.internal.AnnotationBinder.bindClass(AnnotationBinder.java:401)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:257)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:281)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:324)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	... 15 common frames omitted
+2025-02-04 10:54:27 [main] INFO  : Starting VehiclemanagementApplication using Java 21.0.2 with PID 27244 (D:\sample_projects\vehiclemanagement\build\classes\java\main started by vaisakh.devi in D:\sample_projects\vehiclemanagement)
+2025-02-04 10:54:27 [main] INFO  : No active profile set, falling back to 1 default profile: "default"
+2025-02-04 10:54:28 [main] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-04 10:54:28 [main] INFO  : Finished Spring Data repository scanning in 118 ms. Found 1 JPA repository interface.
+2025-02-04 10:54:29 [main] INFO  : Tomcat initialized with port 8080 (http)
+2025-02-04 10:54:29 [main] INFO  : Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-04 10:54:29 [main] INFO  : Starting service [Tomcat]
+2025-02-04 10:54:29 [main] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-04 10:54:29 [main] INFO  : Initializing Spring embedded WebApplicationContext
+2025-02-04 10:54:29 [main] INFO  : Root WebApplicationContext: initialization completed in 2480 ms
+2025-02-04 10:54:30 [main] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-04 10:54:30 [main] INFO  : HikariPool-1 - Starting...
+2025-02-04 10:54:31 [main] INFO  : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:vehicle user=SA
+2025-02-04 10:54:31 [main] INFO  : HikariPool-1 - Start completed.
+2025-02-04 10:54:31 [main] ERROR : Failed to initialize JPA EntityManagerFactory: Property 'com.gpc.vehiclemanagement.model.Vehicle.id' is annotated @GeneratedValue but is not part of an identifier
+2025-02-04 10:54:31 [main] WARN  : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Property 'com.gpc.vehiclemanagement.model.Vehicle.id' is annotated @GeneratedValue but is not part of an identifier
+2025-02-04 10:54:31 [main] INFO  : HikariPool-1 - Shutdown initiated...
+2025-02-04 10:54:31 [main] INFO  : HikariPool-1 - Shutdown completed.
+2025-02-04 10:54:31 [main] INFO  : Stopping service [Tomcat]
+2025-02-04 10:54:31 [main] INFO  : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-04 10:54:31 [main] ERROR : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Property 'com.gpc.vehiclemanagement.model.Vehicle.id' is annotated @GeneratedValue but is not part of an identifier
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.gpc.vehiclemanagement.VehiclemanagementApplication.main(VehiclemanagementApplication.java:9)
+Caused by: org.hibernate.AnnotationException: Property 'com.gpc.vehiclemanagement.model.Vehicle.id' is annotated @GeneratedValue but is not part of an identifier
+	at org.hibernate.boot.model.internal.EntityBinder.processIdPropertiesIfNotAlready(EntityBinder.java:1085)
+	at org.hibernate.boot.model.internal.EntityBinder.handleIdentifier(EntityBinder.java:419)
+	at org.hibernate.boot.model.internal.EntityBinder.bindEntityClass(EntityBinder.java:251)
+	at org.hibernate.boot.model.internal.AnnotationBinder.bindClass(AnnotationBinder.java:401)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:257)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:281)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:324)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	... 15 common frames omitted
+2025-02-04 10:55:00 [main] INFO  : Starting VehiclemanagementApplication using Java 21.0.2 with PID 31712 (D:\sample_projects\vehiclemanagement\build\classes\java\main started by vaisakh.devi in D:\sample_projects\vehiclemanagement)
+2025-02-04 10:55:00 [main] INFO  : No active profile set, falling back to 1 default profile: "default"
+2025-02-04 10:55:02 [main] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-04 10:55:02 [main] INFO  : Finished Spring Data repository scanning in 124 ms. Found 1 JPA repository interface.
+2025-02-04 10:55:03 [main] INFO  : Tomcat initialized with port 8080 (http)
+2025-02-04 10:55:03 [main] INFO  : Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-04 10:55:03 [main] INFO  : Starting service [Tomcat]
+2025-02-04 10:55:03 [main] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-04 10:55:03 [main] INFO  : Initializing Spring embedded WebApplicationContext
+2025-02-04 10:55:03 [main] INFO  : Root WebApplicationContext: initialization completed in 2817 ms
+2025-02-04 10:55:04 [main] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-04 10:55:04 [main] INFO  : HikariPool-1 - Starting...
+2025-02-04 10:55:04 [main] INFO  : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:vehicle user=SA
+2025-02-04 10:55:04 [main] INFO  : HikariPool-1 - Start completed.
+2025-02-04 10:55:05 [main] ERROR : Failed to initialize JPA EntityManagerFactory: Property 'com.gpc.vehiclemanagement.model.Vehicle.id' is annotated @GeneratedValue but is not part of an identifier
+2025-02-04 10:55:05 [main] WARN  : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Property 'com.gpc.vehiclemanagement.model.Vehicle.id' is annotated @GeneratedValue but is not part of an identifier
+2025-02-04 10:55:05 [main] INFO  : HikariPool-1 - Shutdown initiated...
+2025-02-04 10:55:05 [main] INFO  : HikariPool-1 - Shutdown completed.
+2025-02-04 10:55:05 [main] INFO  : Stopping service [Tomcat]
+2025-02-04 10:55:05 [main] INFO  : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-04 10:55:05 [main] ERROR : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Property 'com.gpc.vehiclemanagement.model.Vehicle.id' is annotated @GeneratedValue but is not part of an identifier
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.gpc.vehiclemanagement.VehiclemanagementApplication.main(VehiclemanagementApplication.java:9)
+Caused by: org.hibernate.AnnotationException: Property 'com.gpc.vehiclemanagement.model.Vehicle.id' is annotated @GeneratedValue but is not part of an identifier
+	at org.hibernate.boot.model.internal.EntityBinder.processIdPropertiesIfNotAlready(EntityBinder.java:1085)
+	at org.hibernate.boot.model.internal.EntityBinder.handleIdentifier(EntityBinder.java:419)
+	at org.hibernate.boot.model.internal.EntityBinder.bindEntityClass(EntityBinder.java:251)
+	at org.hibernate.boot.model.internal.AnnotationBinder.bindClass(AnnotationBinder.java:401)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:257)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:281)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:324)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	... 15 common frames omitted
+2025-02-04 10:57:47 [main] INFO  : Starting VehiclemanagementApplication using Java 21.0.2 with PID 14016 (D:\sample_projects\vehiclemanagement\build\classes\java\main started by vaisakh.devi in D:\sample_projects\vehiclemanagement)
+2025-02-04 10:57:47 [main] INFO  : No active profile set, falling back to 1 default profile: "default"
+2025-02-04 10:57:48 [main] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-04 10:57:48 [main] INFO  : Finished Spring Data repository scanning in 100 ms. Found 1 JPA repository interface.
+2025-02-04 10:57:49 [main] INFO  : Tomcat initialized with port 8080 (http)
+2025-02-04 10:57:49 [main] INFO  : Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-04 10:57:49 [main] INFO  : Starting service [Tomcat]
+2025-02-04 10:57:49 [main] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-04 10:57:49 [main] INFO  : Initializing Spring embedded WebApplicationContext
+2025-02-04 10:57:49 [main] INFO  : Root WebApplicationContext: initialization completed in 2430 ms
+2025-02-04 10:57:50 [main] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-04 10:57:50 [main] INFO  : HikariPool-1 - Starting...
+2025-02-04 10:57:51 [main] INFO  : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:vehicle user=SA
+2025-02-04 10:57:51 [main] INFO  : HikariPool-1 - Start completed.
+2025-02-04 10:57:51 [main] ERROR : Failed to initialize JPA EntityManagerFactory: Property 'com.gpc.vehiclemanagement.model.Vehicle.id' is annotated @GeneratedValue but is not part of an identifier
+2025-02-04 10:57:51 [main] WARN  : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Property 'com.gpc.vehiclemanagement.model.Vehicle.id' is annotated @GeneratedValue but is not part of an identifier
+2025-02-04 10:57:51 [main] INFO  : HikariPool-1 - Shutdown initiated...
+2025-02-04 10:57:51 [main] INFO  : HikariPool-1 - Shutdown completed.
+2025-02-04 10:57:51 [main] INFO  : Stopping service [Tomcat]
+2025-02-04 10:57:51 [main] INFO  : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-04 10:57:51 [main] ERROR : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Property 'com.gpc.vehiclemanagement.model.Vehicle.id' is annotated @GeneratedValue but is not part of an identifier
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.gpc.vehiclemanagement.VehiclemanagementApplication.main(VehiclemanagementApplication.java:9)
+Caused by: org.hibernate.AnnotationException: Property 'com.gpc.vehiclemanagement.model.Vehicle.id' is annotated @GeneratedValue but is not part of an identifier
+	at org.hibernate.boot.model.internal.EntityBinder.processIdPropertiesIfNotAlready(EntityBinder.java:1085)
+	at org.hibernate.boot.model.internal.EntityBinder.handleIdentifier(EntityBinder.java:419)
+	at org.hibernate.boot.model.internal.EntityBinder.bindEntityClass(EntityBinder.java:251)
+	at org.hibernate.boot.model.internal.AnnotationBinder.bindClass(AnnotationBinder.java:401)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:257)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:281)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:324)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	... 15 common frames omitted
+2025-02-04 11:11:44 [main] INFO  : Starting VehiclemanagementApplication using Java 21.0.2 with PID 40468 (D:\sample_projects\vehiclemanagement\build\classes\java\main started by vaisakh.devi in D:\sample_projects\vehiclemanagement)
+2025-02-04 11:11:44 [main] INFO  : No active profile set, falling back to 1 default profile: "default"
+2025-02-04 11:11:46 [main] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-04 11:11:46 [main] INFO  : Finished Spring Data repository scanning in 126 ms. Found 1 JPA repository interface.
+2025-02-04 11:11:47 [main] INFO  : Tomcat initialized with port 8080 (http)
+2025-02-04 11:11:47 [main] INFO  : Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-04 11:11:47 [main] INFO  : Starting service [Tomcat]
+2025-02-04 11:11:47 [main] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-04 11:11:47 [main] INFO  : Initializing Spring embedded WebApplicationContext
+2025-02-04 11:11:47 [main] INFO  : Root WebApplicationContext: initialization completed in 2989 ms
+2025-02-04 11:11:48 [main] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-04 11:11:48 [main] INFO  : HikariPool-1 - Starting...
+2025-02-04 11:11:49 [main] INFO  : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:vehicle user=SA
+2025-02-04 11:11:49 [main] INFO  : HikariPool-1 - Start completed.
+2025-02-04 11:11:51 [main] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-04 11:11:52 [main] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-04 11:11:53 [main] INFO  : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-02-04 11:11:54 [main] INFO  : H2 console available at '/h2-ui'. Database available at 'jdbc:h2:mem:vehicle'
+2025-02-04 11:11:54 [main] WARN  : You are asking Spring Security to ignore Ant [pattern='/h2-ui/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-02-04 11:11:54 [main] INFO  : Starting ProtocolHandler ["http-nio-8080"]
+2025-02-04 11:11:54 [main] INFO  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-04 11:11:54 [main] INFO  : Started VehiclemanagementApplication in 11.289 seconds (process running for 12.304)
+2025-02-04 11:12:03 [http-nio-8080-exec-1] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-04 11:12:03 [http-nio-8080-exec-1] INFO  : Initializing Servlet 'dispatcherServlet'
+2025-02-04 11:12:03 [http-nio-8080-exec-1] INFO  : Completed initialization in 0 ms
+2025-02-04 11:12:04 [http-nio-8080-exec-1] INFO  : Vehicle creation request com.gpc.vehiclemanagement.request.VehicleRequest@2e493742
+2025-02-04 11:12:05 [http-nio-8080-exec-1] ERROR : Sequence "SEQUENCE_SKU" not found; SQL statement:
+select next value for SEQUENCE_SKU [90036-232]
+2025-02-04 11:12:05 [http-nio-8080-exec-1] ERROR : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement [Sequence "SEQUENCE_SKU" not found; SQL statement:
+select next value for SEQUENCE_SKU [90036-232]] [select next value for SEQUENCE_SKU]; SQL [select next value for SEQUENCE_SKU]] with root cause
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Sequence "SEQUENCE_SKU" not found; SQL statement:
+select next value for SEQUENCE_SKU [90036-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.readSequence(Parser.java:8018)
+	at org.h2.command.Parser.readTermWithIdentifier(Parser.java:5278)
+	at org.h2.command.Parser.readTermWithIdentifier(Parser.java:5148)
+	at org.h2.command.Parser.readTerm(Parser.java:4828)
+	at org.h2.command.Parser.readFactor(Parser.java:3323)
+	at org.h2.command.Parser.readSum(Parser.java:3310)
+	at org.h2.command.Parser.readConcat(Parser.java:3275)
+	at org.h2.command.Parser.readCondition(Parser.java:3065)
+	at org.h2.command.Parser.readExpression(Parser.java:2985)
+	at org.h2.command.Parser.parseSelectExpressions(Parser.java:2785)
+	at org.h2.command.Parser.parseSelect(Parser.java:2803)
+	at org.h2.command.Parser.parseQueryPrimary(Parser.java:2692)
+	at org.h2.command.Parser.parseQueryTerm(Parser.java:2547)
+	at org.h2.command.Parser.parseQueryExpressionBody(Parser.java:2526)
+	at org.h2.command.Parser.parseQueryExpressionBodyAndEndOfQuery(Parser.java:2519)
+	at org.h2.command.Parser.parseQueryExpression(Parser.java:2512)
+	at org.h2.command.Parser.parseQuery(Parser.java:2479)
+	at org.h2.command.Parser.parsePrepared(Parser.java:610)
+	at org.h2.command.Parser.parse(Parser.java:581)
+	at org.h2.command.Parser.parse(Parser.java:556)
+	at org.h2.command.Parser.prepareCommand(Parser.java:484)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:645)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:561)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1164)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:93)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:687)
+	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:342)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$4.doPrepare(StatementPreparerImpl.java:151)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:180)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareQueryStatement(StatementPreparerImpl.java:153)
+	at org.hibernate.sql.exec.internal.StandardStatementCreator.createStatement(StandardStatementCreator.java:49)
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.executeQuery(DeferredResultSetAccess.java:235)
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.getResultSet(DeferredResultSetAccess.java:171)
+	at org.hibernate.sql.results.jdbc.internal.AbstractResultSetAccess.getMetaData(AbstractResultSetAccess.java:36)
+	at org.hibernate.sql.results.jdbc.internal.AbstractResultSetAccess.getColumnCount(AbstractResultSetAccess.java:52)
+	at org.hibernate.query.results.ResultSetMappingImpl.resolve(ResultSetMappingImpl.java:194)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.resolveJdbcValuesSource(JdbcSelectExecutorStandardImpl.java:340)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.doExecuteQuery(JdbcSelectExecutorStandardImpl.java:137)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.executeQuery(JdbcSelectExecutorStandardImpl.java:102)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.executeQuery(JdbcSelectExecutor.java:91)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:165)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:142)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:132)
+	at org.hibernate.query.sql.internal.NativeSelectQueryPlanImpl.performList(NativeSelectQueryPlanImpl.java:135)
+	at org.hibernate.query.sql.internal.NativeQueryImpl.doList(NativeQueryImpl.java:693)
+	at org.hibernate.query.spi.AbstractSelectionQuery.list(AbstractSelectionQuery.java:143)
+	at org.hibernate.query.spi.AbstractSelectionQuery.getSingleResult(AbstractSelectionQuery.java:275)
+	at com.gpc.vehiclemanagement.util.CustomSequenceGenerator.generateNextValue(CustomSequenceGenerator.java:15)
+	at com.gpc.vehiclemanagement.util.SequenceSKUGenerator.generateValue(SequenceSKUGenerator.java:8)
+	at com.gpc.vehiclemanagement.util.SequenceSKUGenerator.generateValue(SequenceSKUGenerator.java:5)
+	at org.hibernate.tuple.ValueGenerator.generateValue(ValueGenerator.java:41)
+	at org.hibernate.tuple.VmValueGeneration.generate(VmValueGeneration.java:54)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.preInsertInMemoryValueGeneration(InsertCoordinatorStandard.java:147)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.coordinateInsert(InsertCoordinatorStandard.java:124)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.insert(InsertCoordinatorStandard.java:104)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:110)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:644)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:511)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:414)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:41)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1429)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:491)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2354)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:1978)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:439)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:169)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:267)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:795)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:758)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:698)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:416)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy128.save(Unknown Source)
+	at com.gpc.vehiclemanagement.service.VehicleService.save(VehicleService.java:39)
+	at com.gpc.vehiclemanagement.controller.VehicleController.create(VehicleController.java:75)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:213)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-02-04 11:22:43 [main] INFO  : Starting VehiclemanagementApplication using Java 21.0.2 with PID 26704 (D:\sample_projects\vehiclemanagement\build\classes\java\main started by vaisakh.devi in D:\sample_projects\vehiclemanagement)
+2025-02-04 11:22:43 [main] INFO  : No active profile set, falling back to 1 default profile: "default"
+2025-02-04 11:22:44 [main] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-04 11:22:44 [main] INFO  : Finished Spring Data repository scanning in 115 ms. Found 1 JPA repository interface.
+2025-02-04 11:22:45 [main] INFO  : Tomcat initialized with port 8080 (http)
+2025-02-04 11:22:45 [main] INFO  : Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-04 11:22:45 [main] INFO  : Starting service [Tomcat]
+2025-02-04 11:22:45 [main] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-04 11:22:45 [main] INFO  : Initializing Spring embedded WebApplicationContext
+2025-02-04 11:22:45 [main] INFO  : Root WebApplicationContext: initialization completed in 2545 ms
+2025-02-04 11:22:46 [main] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-04 11:22:46 [main] INFO  : HikariPool-1 - Starting...
+2025-02-04 11:22:47 [main] INFO  : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:vehicle user=SA
+2025-02-04 11:22:47 [main] INFO  : HikariPool-1 - Start completed.
+2025-02-04 11:22:48 [main] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-04 11:22:49 [main] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-04 11:22:50 [main] INFO  : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-02-04 11:22:51 [main] INFO  : H2 console available at '/h2-ui'. Database available at 'jdbc:h2:mem:vehicle'
+2025-02-04 11:22:51 [main] WARN  : You are asking Spring Security to ignore Ant [pattern='/h2-ui/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-02-04 11:22:51 [main] INFO  : Starting ProtocolHandler ["http-nio-8080"]
+2025-02-04 11:22:51 [main] INFO  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-04 11:22:51 [main] INFO  : Started VehiclemanagementApplication in 9.311 seconds (process running for 10.349)
+2025-02-04 11:22:59 [http-nio-8080-exec-2] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-04 11:22:59 [http-nio-8080-exec-2] INFO  : Initializing Servlet 'dispatcherServlet'
+2025-02-04 11:22:59 [http-nio-8080-exec-2] INFO  : Completed initialization in 0 ms
+2025-02-04 11:23:00 [http-nio-8080-exec-2] INFO  : Vehicle creation request com.gpc.vehiclemanagement.request.VehicleRequest@9af0d2d
+2025-02-04 11:23:00 [http-nio-8080-exec-2] ERROR : Table "VEHICLES" not found (this database is empty); SQL statement:
+select v1_0.model,v1_0.vehicle_make,v1_0.vehicle_year,v1_0.created_by,v1_0.non_pk_column,v1_0.submodel from vehicles v1_0 where (v1_0.model,v1_0.vehicle_make,v1_0.vehicle_year) in ((?,?,?)) [42104-232]
+2025-02-04 11:23:00 [http-nio-8080-exec-2] ERROR : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement [Table "VEHICLES" not found (this database is empty); SQL statement:
+select v1_0.model,v1_0.vehicle_make,v1_0.vehicle_year,v1_0.created_by,v1_0.non_pk_column,v1_0.submodel from vehicles v1_0 where (v1_0.model,v1_0.vehicle_make,v1_0.vehicle_year) in ((?,?,?)) [42104-232]] [select v1_0.model,v1_0.vehicle_make,v1_0.vehicle_year,v1_0.created_by,v1_0.non_pk_column,v1_0.submodel from vehicles v1_0 where (v1_0.model,v1_0.vehicle_make,v1_0.vehicle_year) in ((?,?,?))]; SQL [select v1_0.model,v1_0.vehicle_make,v1_0.vehicle_year,v1_0.created_by,v1_0.non_pk_column,v1_0.submodel from vehicles v1_0 where (v1_0.model,v1_0.vehicle_make,v1_0.vehicle_year) in ((?,?,?))]] with root cause
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "VEHICLES" not found (this database is empty); SQL statement:
+select v1_0.model,v1_0.vehicle_make,v1_0.vehicle_year,v1_0.created_by,v1_0.non_pk_column,v1_0.submodel from vehicles v1_0 where (v1_0.model,v1_0.vehicle_make,v1_0.vehicle_year) in ((?,?,?)) [42104-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:7932)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:7916)
+	at org.h2.command.Parser.readTableOrView(Parser.java:7895)
+	at org.h2.command.Parser.readTablePrimary(Parser.java:1769)
+	at org.h2.command.Parser.readTableReference(Parser.java:2249)
+	at org.h2.command.Parser.parseSelectFromPart(Parser.java:2702)
+	at org.h2.command.Parser.parseSelect(Parser.java:2810)
+	at org.h2.command.Parser.parseQueryPrimary(Parser.java:2692)
+	at org.h2.command.Parser.parseQueryTerm(Parser.java:2547)
+	at org.h2.command.Parser.parseQueryExpressionBody(Parser.java:2526)
+	at org.h2.command.Parser.parseQueryExpressionBodyAndEndOfQuery(Parser.java:2519)
+	at org.h2.command.Parser.parseQueryExpression(Parser.java:2512)
+	at org.h2.command.Parser.parseQuery(Parser.java:2479)
+	at org.h2.command.Parser.parsePrepared(Parser.java:610)
+	at org.h2.command.Parser.parse(Parser.java:581)
+	at org.h2.command.Parser.parse(Parser.java:556)
+	at org.h2.command.Parser.prepareCommand(Parser.java:484)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:645)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:561)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1164)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:93)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:687)
+	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:342)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$4.doPrepare(StatementPreparerImpl.java:151)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:180)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareQueryStatement(StatementPreparerImpl.java:153)
+	at org.hibernate.sql.exec.internal.StandardStatementCreator.createStatement(StandardStatementCreator.java:49)
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.executeQuery(DeferredResultSetAccess.java:235)
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.getResultSet(DeferredResultSetAccess.java:171)
+	at org.hibernate.sql.results.jdbc.internal.JdbcValuesResultSetImpl.<init>(JdbcValuesResultSetImpl.java:74)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.resolveJdbcValuesSource(JdbcSelectExecutorStandardImpl.java:355)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.doExecuteQuery(JdbcSelectExecutorStandardImpl.java:137)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.executeQuery(JdbcSelectExecutorStandardImpl.java:102)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.executeQuery(JdbcSelectExecutor.java:91)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:165)
+	at org.hibernate.loader.ast.internal.SingleIdLoadPlan.load(SingleIdLoadPlan.java:145)
+	at org.hibernate.loader.ast.internal.SingleIdLoadPlan.load(SingleIdLoadPlan.java:117)
+	at org.hibernate.loader.ast.internal.SingleIdEntityLoaderStandardImpl.load(SingleIdEntityLoaderStandardImpl.java:74)
+	at org.hibernate.persister.entity.AbstractEntityPersister.doLoad(AbstractEntityPersister.java:3895)
+	at org.hibernate.persister.entity.AbstractEntityPersister.load(AbstractEntityPersister.java:3884)
+	at org.hibernate.event.internal.DefaultLoadEventListener.loadFromDatasource(DefaultLoadEventListener.java:604)
+	at org.hibernate.event.internal.DefaultLoadEventListener.loadFromCacheOrDatasource(DefaultLoadEventListener.java:590)
+	at org.hibernate.event.internal.DefaultLoadEventListener.load(DefaultLoadEventListener.java:560)
+	at org.hibernate.event.internal.DefaultLoadEventListener.doLoad(DefaultLoadEventListener.java:544)
+	at org.hibernate.event.internal.DefaultLoadEventListener.load(DefaultLoadEventListener.java:206)
+	at org.hibernate.event.internal.DefaultLoadEventListener.loadWithRegularProxy(DefaultLoadEventListener.java:289)
+	at org.hibernate.event.internal.DefaultLoadEventListener.proxyOrLoad(DefaultLoadEventListener.java:241)
+	at org.hibernate.event.internal.DefaultLoadEventListener.doOnLoad(DefaultLoadEventListener.java:110)
+	at org.hibernate.event.internal.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:69)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:138)
+	at org.hibernate.internal.SessionImpl.fireLoadNoChecks(SessionImpl.java:1229)
+	at org.hibernate.internal.SessionImpl.fireLoad(SessionImpl.java:1217)
+	at org.hibernate.loader.internal.IdentifierLoadAccessImpl.load(IdentifierLoadAccessImpl.java:210)
+	at org.hibernate.loader.internal.IdentifierLoadAccessImpl.doLoad(IdentifierLoadAccessImpl.java:161)
+	at org.hibernate.loader.internal.IdentifierLoadAccessImpl.lambda$load$1(IdentifierLoadAccessImpl.java:150)
+	at org.hibernate.loader.internal.IdentifierLoadAccessImpl.perform(IdentifierLoadAccessImpl.java:113)
+	at org.hibernate.loader.internal.IdentifierLoadAccessImpl.load(IdentifierLoadAccessImpl.java:150)
+	at org.hibernate.internal.SessionImpl.get(SessionImpl.java:1030)
+	at org.hibernate.event.internal.DefaultMergeEventListener.lambda$entityIsDetached$0(DefaultMergeEventListener.java:413)
+	at org.hibernate.engine.spi.LoadQueryInfluencers.fromInternalFetchProfile(LoadQueryInfluencers.java:109)
+	at org.hibernate.event.internal.DefaultMergeEventListener.entityIsDetached(DefaultMergeEventListener.java:411)
+	at org.hibernate.event.internal.DefaultMergeEventListener.merge(DefaultMergeEventListener.java:214)
+	at org.hibernate.event.internal.DefaultMergeEventListener.doMerge(DefaultMergeEventListener.java:152)
+	at org.hibernate.event.internal.DefaultMergeEventListener.onMerge(DefaultMergeEventListener.java:136)
+	at org.hibernate.event.internal.DefaultMergeEventListener.onMerge(DefaultMergeEventListener.java:89)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
+	at org.hibernate.internal.SessionImpl.fireMerge(SessionImpl.java:854)
+	at org.hibernate.internal.SessionImpl.merge(SessionImpl.java:840)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:364)
+	at jdk.proxy2/jdk.proxy2.$Proxy123.merge(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:320)
+	at jdk.proxy2/jdk.proxy2.$Proxy123.merge(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:630)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:515)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:284)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:752)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:174)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:149)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:69)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy127.save(Unknown Source)
+	at com.gpc.vehiclemanagement.service.VehicleService.save(VehicleService.java:39)
+	at com.gpc.vehiclemanagement.controller.VehicleController.create(VehicleController.java:75)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:213)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-02-04 11:24:31 [main] INFO  : Starting VehiclemanagementApplication using Java 21.0.2 with PID 42664 (D:\sample_projects\vehiclemanagement\build\classes\java\main started by vaisakh.devi in D:\sample_projects\vehiclemanagement)
+2025-02-04 11:24:31 [main] INFO  : No active profile set, falling back to 1 default profile: "default"
+2025-02-04 11:24:32 [main] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-04 11:24:32 [main] INFO  : Finished Spring Data repository scanning in 99 ms. Found 1 JPA repository interface.
+2025-02-04 11:24:33 [main] INFO  : Tomcat initialized with port 8080 (http)
+2025-02-04 11:24:33 [main] INFO  : Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-04 11:24:33 [main] INFO  : Starting service [Tomcat]
+2025-02-04 11:24:33 [main] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-04 11:24:33 [main] INFO  : Initializing Spring embedded WebApplicationContext
+2025-02-04 11:24:33 [main] INFO  : Root WebApplicationContext: initialization completed in 2630 ms
+2025-02-04 11:24:34 [main] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-04 11:24:34 [main] INFO  : HikariPool-1 - Starting...
+2025-02-04 11:24:35 [main] INFO  : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:vehicle user=SA
+2025-02-04 11:24:35 [main] INFO  : HikariPool-1 - Start completed.
+2025-02-04 11:24:36 [main] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-04 11:24:37 [main] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-04 11:24:37 [main] INFO  : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-02-04 11:24:38 [main] INFO  : H2 console available at '/h2-ui'. Database available at 'jdbc:h2:mem:vehicle'
+2025-02-04 11:24:39 [main] WARN  : You are asking Spring Security to ignore Ant [pattern='/h2-ui/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-02-04 11:24:39 [main] INFO  : Starting ProtocolHandler ["http-nio-8080"]
+2025-02-04 11:24:39 [main] INFO  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-04 11:24:39 [main] INFO  : Started VehiclemanagementApplication in 9.316 seconds (process running for 10.371)
+2025-02-04 11:24:47 [http-nio-8080-exec-2] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-04 11:24:47 [http-nio-8080-exec-2] INFO  : Initializing Servlet 'dispatcherServlet'
+2025-02-04 11:24:47 [http-nio-8080-exec-2] INFO  : Completed initialization in 0 ms
+2025-02-04 11:24:48 [http-nio-8080-exec-2] INFO  : Vehicle creation request com.gpc.vehiclemanagement.request.VehicleRequest@394cd1a4
+2025-02-04 11:24:48 [http-nio-8080-exec-2] ERROR : Table "VEHICLES" not found (this database is empty); SQL statement:
+select v1_0.model,v1_0.vehicle_make,v1_0.vehicle_year,v1_0.created_by,v1_0.non_pk_column,v1_0.submodel from vehicles v1_0 where (v1_0.model,v1_0.vehicle_make,v1_0.vehicle_year) in ((?,?,?)) [42104-232]
+2025-02-04 11:24:48 [http-nio-8080-exec-2] ERROR : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement [Table "VEHICLES" not found (this database is empty); SQL statement:
+select v1_0.model,v1_0.vehicle_make,v1_0.vehicle_year,v1_0.created_by,v1_0.non_pk_column,v1_0.submodel from vehicles v1_0 where (v1_0.model,v1_0.vehicle_make,v1_0.vehicle_year) in ((?,?,?)) [42104-232]] [select v1_0.model,v1_0.vehicle_make,v1_0.vehicle_year,v1_0.created_by,v1_0.non_pk_column,v1_0.submodel from vehicles v1_0 where (v1_0.model,v1_0.vehicle_make,v1_0.vehicle_year) in ((?,?,?))]; SQL [select v1_0.model,v1_0.vehicle_make,v1_0.vehicle_year,v1_0.created_by,v1_0.non_pk_column,v1_0.submodel from vehicles v1_0 where (v1_0.model,v1_0.vehicle_make,v1_0.vehicle_year) in ((?,?,?))]] with root cause
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "VEHICLES" not found (this database is empty); SQL statement:
+select v1_0.model,v1_0.vehicle_make,v1_0.vehicle_year,v1_0.created_by,v1_0.non_pk_column,v1_0.submodel from vehicles v1_0 where (v1_0.model,v1_0.vehicle_make,v1_0.vehicle_year) in ((?,?,?)) [42104-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:7932)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:7916)
+	at org.h2.command.Parser.readTableOrView(Parser.java:7895)
+	at org.h2.command.Parser.readTablePrimary(Parser.java:1769)
+	at org.h2.command.Parser.readTableReference(Parser.java:2249)
+	at org.h2.command.Parser.parseSelectFromPart(Parser.java:2702)
+	at org.h2.command.Parser.parseSelect(Parser.java:2810)
+	at org.h2.command.Parser.parseQueryPrimary(Parser.java:2692)
+	at org.h2.command.Parser.parseQueryTerm(Parser.java:2547)
+	at org.h2.command.Parser.parseQueryExpressionBody(Parser.java:2526)
+	at org.h2.command.Parser.parseQueryExpressionBodyAndEndOfQuery(Parser.java:2519)
+	at org.h2.command.Parser.parseQueryExpression(Parser.java:2512)
+	at org.h2.command.Parser.parseQuery(Parser.java:2479)
+	at org.h2.command.Parser.parsePrepared(Parser.java:610)
+	at org.h2.command.Parser.parse(Parser.java:581)
+	at org.h2.command.Parser.parse(Parser.java:556)
+	at org.h2.command.Parser.prepareCommand(Parser.java:484)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:645)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:561)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1164)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:93)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:687)
+	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:342)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$4.doPrepare(StatementPreparerImpl.java:151)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:180)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareQueryStatement(StatementPreparerImpl.java:153)
+	at org.hibernate.sql.exec.internal.StandardStatementCreator.createStatement(StandardStatementCreator.java:49)
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.executeQuery(DeferredResultSetAccess.java:235)
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.getResultSet(DeferredResultSetAccess.java:171)
+	at org.hibernate.sql.results.jdbc.internal.JdbcValuesResultSetImpl.<init>(JdbcValuesResultSetImpl.java:74)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.resolveJdbcValuesSource(JdbcSelectExecutorStandardImpl.java:355)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.doExecuteQuery(JdbcSelectExecutorStandardImpl.java:137)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.executeQuery(JdbcSelectExecutorStandardImpl.java:102)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.executeQuery(JdbcSelectExecutor.java:91)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:165)
+	at org.hibernate.loader.ast.internal.SingleIdLoadPlan.load(SingleIdLoadPlan.java:145)
+	at org.hibernate.loader.ast.internal.SingleIdLoadPlan.load(SingleIdLoadPlan.java:117)
+	at org.hibernate.loader.ast.internal.SingleIdEntityLoaderStandardImpl.load(SingleIdEntityLoaderStandardImpl.java:74)
+	at org.hibernate.persister.entity.AbstractEntityPersister.doLoad(AbstractEntityPersister.java:3895)
+	at org.hibernate.persister.entity.AbstractEntityPersister.load(AbstractEntityPersister.java:3884)
+	at org.hibernate.event.internal.DefaultLoadEventListener.loadFromDatasource(DefaultLoadEventListener.java:604)
+	at org.hibernate.event.internal.DefaultLoadEventListener.loadFromCacheOrDatasource(DefaultLoadEventListener.java:590)
+	at org.hibernate.event.internal.DefaultLoadEventListener.load(DefaultLoadEventListener.java:560)
+	at org.hibernate.event.internal.DefaultLoadEventListener.doLoad(DefaultLoadEventListener.java:544)
+	at org.hibernate.event.internal.DefaultLoadEventListener.load(DefaultLoadEventListener.java:206)
+	at org.hibernate.event.internal.DefaultLoadEventListener.loadWithRegularProxy(DefaultLoadEventListener.java:289)
+	at org.hibernate.event.internal.DefaultLoadEventListener.proxyOrLoad(DefaultLoadEventListener.java:241)
+	at org.hibernate.event.internal.DefaultLoadEventListener.doOnLoad(DefaultLoadEventListener.java:110)
+	at org.hibernate.event.internal.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:69)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:138)
+	at org.hibernate.internal.SessionImpl.fireLoadNoChecks(SessionImpl.java:1229)
+	at org.hibernate.internal.SessionImpl.fireLoad(SessionImpl.java:1217)
+	at org.hibernate.loader.internal.IdentifierLoadAccessImpl.load(IdentifierLoadAccessImpl.java:210)
+	at org.hibernate.loader.internal.IdentifierLoadAccessImpl.doLoad(IdentifierLoadAccessImpl.java:161)
+	at org.hibernate.loader.internal.IdentifierLoadAccessImpl.lambda$load$1(IdentifierLoadAccessImpl.java:150)
+	at org.hibernate.loader.internal.IdentifierLoadAccessImpl.perform(IdentifierLoadAccessImpl.java:113)
+	at org.hibernate.loader.internal.IdentifierLoadAccessImpl.load(IdentifierLoadAccessImpl.java:150)
+	at org.hibernate.internal.SessionImpl.get(SessionImpl.java:1030)
+	at org.hibernate.event.internal.DefaultMergeEventListener.lambda$entityIsDetached$0(DefaultMergeEventListener.java:413)
+	at org.hibernate.engine.spi.LoadQueryInfluencers.fromInternalFetchProfile(LoadQueryInfluencers.java:109)
+	at org.hibernate.event.internal.DefaultMergeEventListener.entityIsDetached(DefaultMergeEventListener.java:411)
+	at org.hibernate.event.internal.DefaultMergeEventListener.merge(DefaultMergeEventListener.java:214)
+	at org.hibernate.event.internal.DefaultMergeEventListener.doMerge(DefaultMergeEventListener.java:152)
+	at org.hibernate.event.internal.DefaultMergeEventListener.onMerge(DefaultMergeEventListener.java:136)
+	at org.hibernate.event.internal.DefaultMergeEventListener.onMerge(DefaultMergeEventListener.java:89)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
+	at org.hibernate.internal.SessionImpl.fireMerge(SessionImpl.java:854)
+	at org.hibernate.internal.SessionImpl.merge(SessionImpl.java:840)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:364)
+	at jdk.proxy2/jdk.proxy2.$Proxy122.merge(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:320)
+	at jdk.proxy2/jdk.proxy2.$Proxy122.merge(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:630)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:515)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:284)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:752)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:174)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:149)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:69)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy126.save(Unknown Source)
+	at com.gpc.vehiclemanagement.service.VehicleService.save(VehicleService.java:39)
+	at com.gpc.vehiclemanagement.controller.VehicleController.create(VehicleController.java:75)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:213)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-02-04 11:33:07 [main] INFO  : Starting VehiclemanagementApplication using Java 21.0.2 with PID 42620 (D:\sample_projects\vehiclemanagement\build\classes\java\main started by vaisakh.devi in D:\sample_projects\vehiclemanagement)
+2025-02-04 11:33:07 [main] INFO  : No active profile set, falling back to 1 default profile: "default"
+2025-02-04 11:33:09 [main] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-04 11:33:09 [main] INFO  : Finished Spring Data repository scanning in 103 ms. Found 1 JPA repository interface.
+2025-02-04 11:33:10 [main] INFO  : Tomcat initialized with port 8080 (http)
+2025-02-04 11:33:10 [main] INFO  : Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-04 11:33:10 [main] INFO  : Starting service [Tomcat]
+2025-02-04 11:33:10 [main] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-04 11:33:10 [main] INFO  : Initializing Spring embedded WebApplicationContext
+2025-02-04 11:33:10 [main] INFO  : Root WebApplicationContext: initialization completed in 2418 ms
+2025-02-04 11:33:11 [main] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-04 11:33:11 [main] INFO  : HikariPool-1 - Starting...
+2025-02-04 11:33:11 [main] INFO  : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:vehicle user=SA
+2025-02-04 11:33:11 [main] INFO  : HikariPool-1 - Start completed.
+2025-02-04 11:33:13 [main] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-04 11:33:13 [main] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-04 11:33:14 [main] INFO  : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-02-04 11:33:15 [main] INFO  : H2 console available at '/h2-ui'. Database available at 'jdbc:h2:mem:vehicle'
+2025-02-04 11:33:15 [main] WARN  : You are asking Spring Security to ignore Ant [pattern='/h2-ui/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-02-04 11:33:15 [main] INFO  : Starting ProtocolHandler ["http-nio-8080"]
+2025-02-04 11:33:15 [main] INFO  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-04 11:33:15 [main] INFO  : Started VehiclemanagementApplication in 8.557 seconds (process running for 9.444)
+2025-02-04 11:33:20 [http-nio-8080-exec-1] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-04 11:33:20 [http-nio-8080-exec-1] INFO  : Initializing Servlet 'dispatcherServlet'
+2025-02-04 11:33:20 [http-nio-8080-exec-1] INFO  : Completed initialization in 1 ms
+2025-02-04 11:33:21 [http-nio-8080-exec-1] INFO  : Vehicle creation request com.gpc.vehiclemanagement.request.VehicleRequest@ab865c4
+2025-02-04 11:33:21 [http-nio-8080-exec-1] ERROR : Table "VEHICLES" not found (this database is empty); SQL statement:
+select v1_0.model,v1_0.vehicle_make,v1_0.vehicle_year,v1_0.created_by,v1_0.non_pk_column,v1_0.submodel from vehicles v1_0 where (v1_0.model,v1_0.vehicle_make,v1_0.vehicle_year) in ((?,?,?)) [42104-232]
+2025-02-04 11:33:21 [http-nio-8080-exec-1] ERROR : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement [Table "VEHICLES" not found (this database is empty); SQL statement:
+select v1_0.model,v1_0.vehicle_make,v1_0.vehicle_year,v1_0.created_by,v1_0.non_pk_column,v1_0.submodel from vehicles v1_0 where (v1_0.model,v1_0.vehicle_make,v1_0.vehicle_year) in ((?,?,?)) [42104-232]] [select v1_0.model,v1_0.vehicle_make,v1_0.vehicle_year,v1_0.created_by,v1_0.non_pk_column,v1_0.submodel from vehicles v1_0 where (v1_0.model,v1_0.vehicle_make,v1_0.vehicle_year) in ((?,?,?))]; SQL [select v1_0.model,v1_0.vehicle_make,v1_0.vehicle_year,v1_0.created_by,v1_0.non_pk_column,v1_0.submodel from vehicles v1_0 where (v1_0.model,v1_0.vehicle_make,v1_0.vehicle_year) in ((?,?,?))]] with root cause
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "VEHICLES" not found (this database is empty); SQL statement:
+select v1_0.model,v1_0.vehicle_make,v1_0.vehicle_year,v1_0.created_by,v1_0.non_pk_column,v1_0.submodel from vehicles v1_0 where (v1_0.model,v1_0.vehicle_make,v1_0.vehicle_year) in ((?,?,?)) [42104-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:7932)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:7916)
+	at org.h2.command.Parser.readTableOrView(Parser.java:7895)
+	at org.h2.command.Parser.readTablePrimary(Parser.java:1769)
+	at org.h2.command.Parser.readTableReference(Parser.java:2249)
+	at org.h2.command.Parser.parseSelectFromPart(Parser.java:2702)
+	at org.h2.command.Parser.parseSelect(Parser.java:2810)
+	at org.h2.command.Parser.parseQueryPrimary(Parser.java:2692)
+	at org.h2.command.Parser.parseQueryTerm(Parser.java:2547)
+	at org.h2.command.Parser.parseQueryExpressionBody(Parser.java:2526)
+	at org.h2.command.Parser.parseQueryExpressionBodyAndEndOfQuery(Parser.java:2519)
+	at org.h2.command.Parser.parseQueryExpression(Parser.java:2512)
+	at org.h2.command.Parser.parseQuery(Parser.java:2479)
+	at org.h2.command.Parser.parsePrepared(Parser.java:610)
+	at org.h2.command.Parser.parse(Parser.java:581)
+	at org.h2.command.Parser.parse(Parser.java:556)
+	at org.h2.command.Parser.prepareCommand(Parser.java:484)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:645)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:561)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1164)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:93)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:687)
+	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:342)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$4.doPrepare(StatementPreparerImpl.java:151)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:180)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareQueryStatement(StatementPreparerImpl.java:153)
+	at org.hibernate.sql.exec.internal.StandardStatementCreator.createStatement(StandardStatementCreator.java:49)
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.executeQuery(DeferredResultSetAccess.java:235)
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.getResultSet(DeferredResultSetAccess.java:171)
+	at org.hibernate.sql.results.jdbc.internal.JdbcValuesResultSetImpl.<init>(JdbcValuesResultSetImpl.java:74)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.resolveJdbcValuesSource(JdbcSelectExecutorStandardImpl.java:355)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.doExecuteQuery(JdbcSelectExecutorStandardImpl.java:137)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.executeQuery(JdbcSelectExecutorStandardImpl.java:102)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.executeQuery(JdbcSelectExecutor.java:91)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:165)
+	at org.hibernate.loader.ast.internal.SingleIdLoadPlan.load(SingleIdLoadPlan.java:145)
+	at org.hibernate.loader.ast.internal.SingleIdLoadPlan.load(SingleIdLoadPlan.java:117)
+	at org.hibernate.loader.ast.internal.SingleIdEntityLoaderStandardImpl.load(SingleIdEntityLoaderStandardImpl.java:74)
+	at org.hibernate.persister.entity.AbstractEntityPersister.doLoad(AbstractEntityPersister.java:3895)
+	at org.hibernate.persister.entity.AbstractEntityPersister.load(AbstractEntityPersister.java:3884)
+	at org.hibernate.event.internal.DefaultLoadEventListener.loadFromDatasource(DefaultLoadEventListener.java:604)
+	at org.hibernate.event.internal.DefaultLoadEventListener.loadFromCacheOrDatasource(DefaultLoadEventListener.java:590)
+	at org.hibernate.event.internal.DefaultLoadEventListener.load(DefaultLoadEventListener.java:560)
+	at org.hibernate.event.internal.DefaultLoadEventListener.doLoad(DefaultLoadEventListener.java:544)
+	at org.hibernate.event.internal.DefaultLoadEventListener.load(DefaultLoadEventListener.java:206)
+	at org.hibernate.event.internal.DefaultLoadEventListener.loadWithRegularProxy(DefaultLoadEventListener.java:289)
+	at org.hibernate.event.internal.DefaultLoadEventListener.proxyOrLoad(DefaultLoadEventListener.java:241)
+	at org.hibernate.event.internal.DefaultLoadEventListener.doOnLoad(DefaultLoadEventListener.java:110)
+	at org.hibernate.event.internal.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:69)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:138)
+	at org.hibernate.internal.SessionImpl.fireLoadNoChecks(SessionImpl.java:1229)
+	at org.hibernate.internal.SessionImpl.fireLoad(SessionImpl.java:1217)
+	at org.hibernate.loader.internal.IdentifierLoadAccessImpl.load(IdentifierLoadAccessImpl.java:210)
+	at org.hibernate.loader.internal.IdentifierLoadAccessImpl.doLoad(IdentifierLoadAccessImpl.java:161)
+	at org.hibernate.loader.internal.IdentifierLoadAccessImpl.lambda$load$1(IdentifierLoadAccessImpl.java:150)
+	at org.hibernate.loader.internal.IdentifierLoadAccessImpl.perform(IdentifierLoadAccessImpl.java:113)
+	at org.hibernate.loader.internal.IdentifierLoadAccessImpl.load(IdentifierLoadAccessImpl.java:150)
+	at org.hibernate.internal.SessionImpl.get(SessionImpl.java:1030)
+	at org.hibernate.event.internal.DefaultMergeEventListener.lambda$entityIsDetached$0(DefaultMergeEventListener.java:413)
+	at org.hibernate.engine.spi.LoadQueryInfluencers.fromInternalFetchProfile(LoadQueryInfluencers.java:109)
+	at org.hibernate.event.internal.DefaultMergeEventListener.entityIsDetached(DefaultMergeEventListener.java:411)
+	at org.hibernate.event.internal.DefaultMergeEventListener.merge(DefaultMergeEventListener.java:214)
+	at org.hibernate.event.internal.DefaultMergeEventListener.doMerge(DefaultMergeEventListener.java:152)
+	at org.hibernate.event.internal.DefaultMergeEventListener.onMerge(DefaultMergeEventListener.java:136)
+	at org.hibernate.event.internal.DefaultMergeEventListener.onMerge(DefaultMergeEventListener.java:89)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
+	at org.hibernate.internal.SessionImpl.fireMerge(SessionImpl.java:854)
+	at org.hibernate.internal.SessionImpl.merge(SessionImpl.java:840)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:364)
+	at jdk.proxy2/jdk.proxy2.$Proxy122.merge(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:320)
+	at jdk.proxy2/jdk.proxy2.$Proxy122.merge(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:630)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:515)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:284)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:752)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:174)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:149)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:69)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy126.save(Unknown Source)
+	at com.gpc.vehiclemanagement.service.VehicleService.save(VehicleService.java:39)
+	at com.gpc.vehiclemanagement.controller.VehicleController.create(VehicleController.java:75)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:213)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-02-04 11:44:10 [main] INFO  : Starting VehiclemanagementApplication using Java 21.0.2 with PID 40920 (D:\sample_projects\vehiclemanagement\build\classes\java\main started by vaisakh.devi in D:\sample_projects\vehiclemanagement)
+2025-02-04 11:44:10 [main] INFO  : No active profile set, falling back to 1 default profile: "default"
+2025-02-04 11:44:12 [main] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-04 11:44:12 [main] INFO  : Finished Spring Data repository scanning in 105 ms. Found 1 JPA repository interface.
+2025-02-04 11:44:13 [main] INFO  : Tomcat initialized with port 8080 (http)
+2025-02-04 11:44:13 [main] INFO  : Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-04 11:44:13 [main] INFO  : Starting service [Tomcat]
+2025-02-04 11:44:13 [main] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-04 11:44:13 [main] INFO  : Initializing Spring embedded WebApplicationContext
+2025-02-04 11:44:13 [main] INFO  : Root WebApplicationContext: initialization completed in 2556 ms
+2025-02-04 11:44:14 [main] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-04 11:44:14 [main] INFO  : HikariPool-1 - Starting...
+2025-02-04 11:44:14 [main] INFO  : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:vehicle user=SA
+2025-02-04 11:44:14 [main] INFO  : HikariPool-1 - Start completed.
+2025-02-04 11:44:16 [main] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-04 11:44:17 [main] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-04 11:44:17 [main] INFO  : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-02-04 11:44:18 [main] INFO  : H2 console available at '/h2-ui'. Database available at 'jdbc:h2:mem:vehicle'
+2025-02-04 11:44:18 [main] WARN  : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Failed to execute SQL script statement #1 of file [D:\sample_projects\vehiclemanagement\build\resources\main\data.sql]: CREATE TABLE vehicles ( id int NOT NULL AUTO_INCREMENT, vehicleMake varchar(255) NOT NULL, vehicleYear int NOT NULL, model varchar(255) NOT NULL, submodel varchar(255) NOT NULL, createdBy varchar(255) NOT NULL, PRIMARY KEY (vehicleMake,vehicleYear,model) )
+2025-02-04 11:44:18 [main] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-04 11:44:18 [main] INFO  : HikariPool-1 - Shutdown initiated...
+2025-02-04 11:44:18 [main] INFO  : HikariPool-1 - Shutdown completed.
+2025-02-04 11:44:18 [main] INFO  : Stopping service [Tomcat]
+2025-02-04 11:44:18 [main] INFO  : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-04 11:44:19 [main] ERROR : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Failed to execute SQL script statement #1 of file [D:\sample_projects\vehiclemanagement\build\resources\main\data.sql]: CREATE TABLE vehicles ( id int NOT NULL AUTO_INCREMENT, vehicleMake varchar(255) NOT NULL, vehicleYear int NOT NULL, model varchar(255) NOT NULL, submodel varchar(255) NOT NULL, createdBy varchar(255) NOT NULL, PRIMARY KEY (vehicleMake,vehicleYear,model) )
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1122)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1093)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1030)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.gpc.vehiclemanagement.VehiclemanagementApplication.main(VehiclemanagementApplication.java:9)
+Caused by: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of file [D:\sample_projects\vehiclemanagement\build\resources\main\data.sql]: CREATE TABLE vehicles ( id int NOT NULL AUTO_INCREMENT, vehicleMake varchar(255) NOT NULL, vehicleYear int NOT NULL, model varchar(255) NOT NULL, submodel varchar(255) NOT NULL, createdBy varchar(255) NOT NULL, PRIMARY KEY (vehicleMake,vehicleYear,model) )
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:282)
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254)
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54)
+	at org.springframework.boot.jdbc.init.DataSourceScriptDatabaseInitializer.runScripts(DataSourceScriptDatabaseInitializer.java:87)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.runScripts(AbstractScriptDatabaseInitializer.java:146)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyScripts(AbstractScriptDatabaseInitializer.java:108)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyDataScripts(AbstractScriptDatabaseInitializer.java:102)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.initializeDatabase(AbstractScriptDatabaseInitializer.java:77)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.afterPropertiesSet(AbstractScriptDatabaseInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	... 20 common frames omitted
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "VEHICLES" already exists; SQL statement:
+CREATE TABLE vehicles ( id int NOT NULL AUTO_INCREMENT, vehicleMake varchar(255) NOT NULL, vehicleYear int NOT NULL, model varchar(255) NOT NULL, submodel varchar(255) NOT NULL, createdBy varchar(255) NOT NULL, PRIMARY KEY (vehicleMake,vehicleYear,model) ) [42101-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.ddl.CreateTable.update(CreateTable.java:91)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:139)
+	at org.h2.command.Command.executeUpdate(Command.java:304)
+	at org.h2.command.Command.executeUpdate(Command.java:248)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:262)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:261)
+	... 30 common frames omitted
+2025-02-04 11:45:25 [main] INFO  : Starting VehiclemanagementApplication using Java 21.0.2 with PID 14672 (D:\sample_projects\vehiclemanagement\build\classes\java\main started by vaisakh.devi in D:\sample_projects\vehiclemanagement)
+2025-02-04 11:45:25 [main] INFO  : No active profile set, falling back to 1 default profile: "default"
+2025-02-04 11:45:26 [main] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-04 11:45:27 [main] INFO  : Finished Spring Data repository scanning in 104 ms. Found 1 JPA repository interface.
+2025-02-04 11:45:28 [main] INFO  : Tomcat initialized with port 8080 (http)
+2025-02-04 11:45:28 [main] INFO  : Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-04 11:45:28 [main] INFO  : Starting service [Tomcat]
+2025-02-04 11:45:28 [main] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-04 11:45:28 [main] INFO  : Initializing Spring embedded WebApplicationContext
+2025-02-04 11:45:28 [main] INFO  : Root WebApplicationContext: initialization completed in 2734 ms
+2025-02-04 11:45:29 [main] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-04 11:45:29 [main] INFO  : HikariPool-1 - Starting...
+2025-02-04 11:45:29 [main] INFO  : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:vehicle user=SA
+2025-02-04 11:45:29 [main] INFO  : HikariPool-1 - Start completed.
+2025-02-04 11:45:31 [main] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-04 11:45:32 [main] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-04 11:45:33 [main] INFO  : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-02-04 11:45:34 [main] INFO  : H2 console available at '/h2-ui'. Database available at 'jdbc:h2:mem:vehicle'
+2025-02-04 11:45:34 [main] WARN  : You are asking Spring Security to ignore Ant [pattern='/h2-ui/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-02-04 11:45:34 [main] INFO  : Starting ProtocolHandler ["http-nio-8080"]
+2025-02-04 11:45:34 [main] INFO  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-04 11:45:34 [main] INFO  : Started VehiclemanagementApplication in 10.245 seconds (process running for 11.353)
+2025-02-04 11:45:42 [http-nio-8080-exec-1] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-04 11:45:42 [http-nio-8080-exec-1] INFO  : Initializing Servlet 'dispatcherServlet'
+2025-02-04 11:45:42 [http-nio-8080-exec-1] INFO  : Completed initialization in 0 ms
+2025-02-04 11:45:43 [http-nio-8080-exec-1] INFO  : Vehicle creation request com.gpc.vehiclemanagement.request.VehicleRequest@56ae5817
+2025-02-04 11:45:43 [http-nio-8080-exec-1] INFO  : Vehicle creation response Vehicle [vehicleId=VehicleId [vehicleMake=Nissan, vehicleYear=2028, model=Magnite], submodel=XS, createdBy=user]
+2025-02-04 11:45:53 [http-nio-8080-exec-3] INFO  : Vehicle creation request com.gpc.vehiclemanagement.request.VehicleRequest@15eb0bc8
+2025-02-04 11:45:53 [http-nio-8080-exec-3] INFO  : Vehicle creation response Vehicle [vehicleId=VehicleId [vehicleMake=Nissan, vehicleYear=2028, model=Magnite], submodel=XS, createdBy=user]
+2025-02-04 11:46:01 [http-nio-8080-exec-4] INFO  : Vehicle creation request com.gpc.vehiclemanagement.request.VehicleRequest@2a9f2601
+2025-02-04 11:46:01 [http-nio-8080-exec-4] INFO  : Vehicle creation response Vehicle [vehicleId=VehicleId [vehicleMake=Nissan, vehicleYear=2029, model=Magnite], submodel=XS, createdBy=user]
+2025-02-04 11:47:23 [main] INFO  : Starting VehiclemanagementApplication using Java 21.0.2 with PID 33236 (D:\sample_projects\vehiclemanagement\build\classes\java\main started by vaisakh.devi in D:\sample_projects\vehiclemanagement)
+2025-02-04 11:47:23 [main] INFO  : No active profile set, falling back to 1 default profile: "default"
+2025-02-04 11:47:24 [main] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-04 11:47:24 [main] INFO  : Finished Spring Data repository scanning in 121 ms. Found 1 JPA repository interface.
+2025-02-04 11:47:25 [main] INFO  : Tomcat initialized with port 8080 (http)
+2025-02-04 11:47:25 [main] INFO  : Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-04 11:47:25 [main] INFO  : Starting service [Tomcat]
+2025-02-04 11:47:25 [main] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-04 11:47:26 [main] INFO  : Initializing Spring embedded WebApplicationContext
+2025-02-04 11:47:26 [main] INFO  : Root WebApplicationContext: initialization completed in 2845 ms
+2025-02-04 11:47:27 [main] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-04 11:47:27 [main] INFO  : HikariPool-1 - Starting...
+2025-02-04 11:47:27 [main] INFO  : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:vehicle user=SA
+2025-02-04 11:47:27 [main] INFO  : HikariPool-1 - Start completed.
+2025-02-04 11:47:30 [main] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-04 11:47:31 [main] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-04 11:47:31 [main] INFO  : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-02-04 11:47:32 [main] INFO  : H2 console available at '/h2-ui'. Database available at 'jdbc:h2:mem:vehicle'
+2025-02-04 11:47:33 [main] WARN  : You are asking Spring Security to ignore Ant [pattern='/h2-ui/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-02-04 11:47:33 [main] INFO  : Starting ProtocolHandler ["http-nio-8080"]
+2025-02-04 11:47:33 [main] INFO  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-04 11:47:33 [main] INFO  : Started VehiclemanagementApplication in 11.503 seconds (process running for 12.602)
+2025-02-04 11:56:50 [main] INFO  : Starting VehiclemanagementApplication using Java 21.0.2 with PID 4564 (D:\sample_projects\vehiclemanagement\build\classes\java\main started by vaisakh.devi in D:\sample_projects\vehiclemanagement)
+2025-02-04 11:56:50 [main] INFO  : No active profile set, falling back to 1 default profile: "default"
+2025-02-04 11:56:51 [main] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-04 11:56:52 [main] INFO  : Finished Spring Data repository scanning in 88 ms. Found 1 JPA repository interface.
+2025-02-04 11:56:52 [main] INFO  : Tomcat initialized with port 8080 (http)
+2025-02-04 11:56:52 [main] INFO  : Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-04 11:56:52 [main] INFO  : Starting service [Tomcat]
+2025-02-04 11:56:52 [main] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-04 11:56:53 [main] INFO  : Initializing Spring embedded WebApplicationContext
+2025-02-04 11:56:53 [main] INFO  : Root WebApplicationContext: initialization completed in 2428 ms
+2025-02-04 11:56:54 [main] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-04 11:56:54 [main] INFO  : HikariPool-1 - Starting...
+2025-02-04 11:56:54 [main] INFO  : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:vehicle user=SA
+2025-02-04 11:56:54 [main] INFO  : HikariPool-1 - Start completed.
+2025-02-04 11:56:56 [main] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-04 11:56:56 [main] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-04 11:56:57 [main] INFO  : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-02-04 11:56:58 [main] INFO  : H2 console available at '/h2-ui'. Database available at 'jdbc:h2:mem:vehicle'
+2025-02-04 11:56:58 [main] WARN  : You are asking Spring Security to ignore Ant [pattern='/h2-ui/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-02-04 11:56:58 [main] INFO  : Starting ProtocolHandler ["http-nio-8080"]
+2025-02-04 11:56:58 [main] INFO  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-04 11:56:58 [main] INFO  : Started VehiclemanagementApplication in 9.326 seconds (process running for 10.495)
+2025-02-04 11:57:35 [http-nio-8080-exec-8] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-04 11:57:35 [http-nio-8080-exec-8] INFO  : Initializing Servlet 'dispatcherServlet'
+2025-02-04 11:57:35 [http-nio-8080-exec-8] INFO  : Completed initialization in 7 ms
+2025-02-04 11:57:36 [http-nio-8080-exec-8] INFO  : Vehicle creation request com.gpc.vehiclemanagement.request.VehicleRequest@2bc78256
+2025-02-04 11:57:36 [http-nio-8080-exec-8] INFO  : Vehicle creation response Vehicle [vehicleId=VehicleId [vehicleMake=Nissan, vehicleYear=2029, model=Magnite], submodel=XS, createdBy=user]
+2025-02-04 11:57:43 [http-nio-8080-exec-10] INFO  : Vehicle creation request com.gpc.vehiclemanagement.request.VehicleRequest@dc8bbf4
+2025-02-04 11:57:43 [http-nio-8080-exec-10] INFO  : Vehicle creation response Vehicle [vehicleId=VehicleId [vehicleMake=Nissan, vehicleYear=2029, model=Magnite], submodel=XS, createdBy=user]
+2025-02-04 11:57:49 [http-nio-8080-exec-1] INFO  : Vehicle creation request com.gpc.vehiclemanagement.request.VehicleRequest@6d634c97
+2025-02-04 11:57:49 [http-nio-8080-exec-1] INFO  : Vehicle creation response Vehicle [vehicleId=VehicleId [vehicleMake=Nissan, vehicleYear=2029, model=Magnite], submodel=XS, createdBy=user]
+2025-02-04 11:58:54 [http-nio-8080-exec-3] INFO  : Vehicle creation request com.gpc.vehiclemanagement.request.VehicleRequest@308886b3
+2025-02-04 11:58:54 [http-nio-8080-exec-3] INFO  : Vehicle creation response Vehicle [vehicleId=VehicleId [vehicleMake=Nissan, vehicleYear=2029, model=Magnite], submodel=XS, createdBy=user]
+2025-02-04 12:51:03 [HikariPool-1 housekeeper] WARN  : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=38m38s928ms141µs700ns).
+2025-02-04 12:57:49 [main] INFO  : Starting VehiclemanagementApplication using Java 21.0.2 with PID 29256 (D:\sample_projects\vehiclemanagement\build\classes\java\main started by vaisakh.devi in D:\sample_projects\vehiclemanagement)
+2025-02-04 12:57:49 [main] INFO  : No active profile set, falling back to 1 default profile: "default"
+2025-02-04 12:57:50 [main] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-04 12:57:50 [main] INFO  : Finished Spring Data repository scanning in 57 ms. Found 1 JPA repository interface.
+2025-02-04 12:57:51 [main] INFO  : Tomcat initialized with port 8080 (http)
+2025-02-04 12:57:51 [main] INFO  : Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-04 12:57:51 [main] INFO  : Starting service [Tomcat]
+2025-02-04 12:57:51 [main] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-04 12:57:51 [main] INFO  : Initializing Spring embedded WebApplicationContext
+2025-02-04 12:57:51 [main] INFO  : Root WebApplicationContext: initialization completed in 1513 ms
+2025-02-04 12:57:52 [main] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-04 12:57:52 [main] INFO  : HikariPool-1 - Starting...
+2025-02-04 12:57:52 [main] INFO  : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:vehicle user=SA
+2025-02-04 12:57:52 [main] INFO  : HikariPool-1 - Start completed.
+2025-02-04 12:57:52 [main] ERROR : Failed to initialize JPA EntityManagerFactory: Property 'com.gpc.vehiclemanagement.model.Vehicle.id' is annotated @GeneratedValue but is not part of an identifier
+2025-02-04 12:57:52 [main] WARN  : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Property 'com.gpc.vehiclemanagement.model.Vehicle.id' is annotated @GeneratedValue but is not part of an identifier
+2025-02-04 12:57:52 [main] INFO  : HikariPool-1 - Shutdown initiated...
+2025-02-04 12:57:52 [main] INFO  : HikariPool-1 - Shutdown completed.
+2025-02-04 12:57:52 [main] INFO  : Stopping service [Tomcat]
+2025-02-04 12:57:52 [main] INFO  : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-04 12:57:52 [main] ERROR : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Property 'com.gpc.vehiclemanagement.model.Vehicle.id' is annotated @GeneratedValue but is not part of an identifier
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.gpc.vehiclemanagement.VehiclemanagementApplication.main(VehiclemanagementApplication.java:9)
+Caused by: org.hibernate.AnnotationException: Property 'com.gpc.vehiclemanagement.model.Vehicle.id' is annotated @GeneratedValue but is not part of an identifier
+	at org.hibernate.boot.model.internal.EntityBinder.processIdPropertiesIfNotAlready(EntityBinder.java:1085)
+	at org.hibernate.boot.model.internal.EntityBinder.handleIdentifier(EntityBinder.java:419)
+	at org.hibernate.boot.model.internal.EntityBinder.bindEntityClass(EntityBinder.java:251)
+	at org.hibernate.boot.model.internal.AnnotationBinder.bindClass(AnnotationBinder.java:401)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:257)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:281)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:324)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	... 15 common frames omitted
+2025-02-04 12:59:58 [main] INFO  : Starting VehiclemanagementApplication using Java 21.0.2 with PID 36244 (D:\sample_projects\vehiclemanagement\build\classes\java\main started by vaisakh.devi in D:\sample_projects\vehiclemanagement)
+2025-02-04 12:59:58 [main] INFO  : No active profile set, falling back to 1 default profile: "default"
+2025-02-04 12:59:58 [main] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-04 12:59:58 [main] INFO  : Finished Spring Data repository scanning in 59 ms. Found 1 JPA repository interface.
+2025-02-04 12:59:59 [main] INFO  : Tomcat initialized with port 8080 (http)
+2025-02-04 12:59:59 [main] INFO  : Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-04 12:59:59 [main] INFO  : Starting service [Tomcat]
+2025-02-04 12:59:59 [main] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-04 12:59:59 [main] INFO  : Initializing Spring embedded WebApplicationContext
+2025-02-04 12:59:59 [main] INFO  : Root WebApplicationContext: initialization completed in 1493 ms
+2025-02-04 13:00:00 [main] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-04 13:00:00 [main] INFO  : HikariPool-1 - Starting...
+2025-02-04 13:00:00 [main] INFO  : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:vehicle user=SA
+2025-02-04 13:00:00 [main] INFO  : HikariPool-1 - Start completed.
+2025-02-04 13:00:00 [main] ERROR : Failed to initialize JPA EntityManagerFactory: Property 'com.gpc.vehiclemanagement.model.Vehicle.id' is annotated @GeneratedValue but is not part of an identifier
+2025-02-04 13:00:00 [main] WARN  : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Property 'com.gpc.vehiclemanagement.model.Vehicle.id' is annotated @GeneratedValue but is not part of an identifier
+2025-02-04 13:00:00 [main] INFO  : HikariPool-1 - Shutdown initiated...
+2025-02-04 13:00:00 [main] INFO  : HikariPool-1 - Shutdown completed.
+2025-02-04 13:00:00 [main] INFO  : Stopping service [Tomcat]
+2025-02-04 13:00:00 [main] INFO  : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-04 13:00:00 [main] ERROR : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Property 'com.gpc.vehiclemanagement.model.Vehicle.id' is annotated @GeneratedValue but is not part of an identifier
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.gpc.vehiclemanagement.VehiclemanagementApplication.main(VehiclemanagementApplication.java:9)
+Caused by: org.hibernate.AnnotationException: Property 'com.gpc.vehiclemanagement.model.Vehicle.id' is annotated @GeneratedValue but is not part of an identifier
+	at org.hibernate.boot.model.internal.EntityBinder.processIdPropertiesIfNotAlready(EntityBinder.java:1085)
+	at org.hibernate.boot.model.internal.EntityBinder.handleIdentifier(EntityBinder.java:419)
+	at org.hibernate.boot.model.internal.EntityBinder.bindEntityClass(EntityBinder.java:251)
+	at org.hibernate.boot.model.internal.AnnotationBinder.bindClass(AnnotationBinder.java:401)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:257)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:281)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:324)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	... 15 common frames omitted
+2025-02-04 13:45:52 [main] INFO  : Starting VehiclemanagementApplication using Java 21.0.2 with PID 40924 (D:\sample_projects\vehiclemanagement\build\classes\java\main started by vaisakh.devi in D:\sample_projects\vehiclemanagement)
+2025-02-04 13:45:52 [main] INFO  : No active profile set, falling back to 1 default profile: "default"
+2025-02-04 13:45:53 [main] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-04 13:45:53 [main] INFO  : Finished Spring Data repository scanning in 73 ms. Found 1 JPA repository interface.
+2025-02-04 13:45:54 [main] INFO  : Tomcat initialized with port 8080 (http)
+2025-02-04 13:45:54 [main] INFO  : Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-04 13:45:54 [main] INFO  : Starting service [Tomcat]
+2025-02-04 13:45:54 [main] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-04 13:45:54 [main] INFO  : Initializing Spring embedded WebApplicationContext
+2025-02-04 13:45:54 [main] INFO  : Root WebApplicationContext: initialization completed in 1524 ms
+2025-02-04 13:45:55 [main] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-04 13:45:55 [main] INFO  : HikariPool-1 - Starting...
+2025-02-04 13:45:55 [main] INFO  : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:vehicle user=SA
+2025-02-04 13:45:55 [main] INFO  : HikariPool-1 - Start completed.
+2025-02-04 13:45:56 [main] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-04 13:45:56 [main] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-04 13:45:56 [main] INFO  : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-02-04 13:45:57 [main] INFO  : H2 console available at '/h2-ui'. Database available at 'jdbc:h2:mem:vehicle'
+2025-02-04 13:45:57 [main] WARN  : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Failed to execute SQL script statement #2 of file [D:\sample_projects\vehiclemanagement\build\resources\main\data.sql]: CREATE SEQUENCE my_sequence_name START 1
+2025-02-04 13:45:57 [main] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-04 13:45:57 [main] INFO  : HikariPool-1 - Shutdown initiated...
+2025-02-04 13:45:57 [main] INFO  : HikariPool-1 - Shutdown completed.
+2025-02-04 13:45:57 [main] INFO  : Stopping service [Tomcat]
+2025-02-04 13:45:57 [main] INFO  : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-04 13:45:57 [main] ERROR : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Failed to execute SQL script statement #2 of file [D:\sample_projects\vehiclemanagement\build\resources\main\data.sql]: CREATE SEQUENCE my_sequence_name START 1
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1122)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1093)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1030)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.gpc.vehiclemanagement.VehiclemanagementApplication.main(VehiclemanagementApplication.java:9)
+Caused by: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #2 of file [D:\sample_projects\vehiclemanagement\build\resources\main\data.sql]: CREATE SEQUENCE my_sequence_name START 1
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:282)
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254)
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54)
+	at org.springframework.boot.jdbc.init.DataSourceScriptDatabaseInitializer.runScripts(DataSourceScriptDatabaseInitializer.java:87)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.runScripts(AbstractScriptDatabaseInitializer.java:146)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyScripts(AbstractScriptDatabaseInitializer.java:108)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyDataScripts(AbstractScriptDatabaseInitializer.java:102)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.initializeDatabase(AbstractScriptDatabaseInitializer.java:77)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.afterPropertiesSet(AbstractScriptDatabaseInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	... 20 common frames omitted
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE SEQUENCE my_sequence_name [*]START 1"; SQL statement:
+CREATE SEQUENCE my_sequence_name START 1 [42000-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.getSyntaxError(DbException.java:247)
+	at org.h2.command.ParserBase.getSyntaxError(ParserBase.java:760)
+	at org.h2.command.Parser.prepareCommand(Parser.java:487)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:645)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:561)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1164)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:245)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:261)
+	... 30 common frames omitted
+2025-02-04 13:46:48 [main] INFO  : Starting VehiclemanagementApplication using Java 21.0.2 with PID 28600 (D:\sample_projects\vehiclemanagement\build\classes\java\main started by vaisakh.devi in D:\sample_projects\vehiclemanagement)
+2025-02-04 13:46:48 [main] INFO  : No active profile set, falling back to 1 default profile: "default"
+2025-02-04 13:46:49 [main] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-04 13:46:49 [main] INFO  : Finished Spring Data repository scanning in 63 ms. Found 1 JPA repository interface.
+2025-02-04 13:46:49 [main] INFO  : Tomcat initialized with port 8080 (http)
+2025-02-04 13:46:49 [main] INFO  : Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-04 13:46:49 [main] INFO  : Starting service [Tomcat]
+2025-02-04 13:46:49 [main] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-04 13:46:49 [main] INFO  : Initializing Spring embedded WebApplicationContext
+2025-02-04 13:46:49 [main] INFO  : Root WebApplicationContext: initialization completed in 1496 ms
+2025-02-04 13:46:50 [main] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-04 13:46:50 [main] INFO  : HikariPool-1 - Starting...
+2025-02-04 13:46:50 [main] INFO  : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:vehicle user=SA
+2025-02-04 13:46:50 [main] INFO  : HikariPool-1 - Start completed.
+2025-02-04 13:46:51 [main] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-04 13:46:52 [main] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-04 13:46:52 [main] INFO  : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-02-04 13:46:52 [main] INFO  : H2 console available at '/h2-ui'. Database available at 'jdbc:h2:mem:vehicle'
+2025-02-04 13:46:52 [main] WARN  : You are asking Spring Security to ignore Ant [pattern='/h2-ui/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-02-04 13:46:52 [main] INFO  : Starting ProtocolHandler ["http-nio-8080"]
+2025-02-04 13:46:52 [main] INFO  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-04 13:46:52 [main] INFO  : Started VehiclemanagementApplication in 5.237 seconds (process running for 5.776)
+2025-02-04 13:47:01 [http-nio-8080-exec-1] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-04 13:47:01 [http-nio-8080-exec-1] INFO  : Initializing Servlet 'dispatcherServlet'
+2025-02-04 13:47:01 [http-nio-8080-exec-1] INFO  : Completed initialization in 0 ms
+2025-02-04 13:47:02 [http-nio-8080-exec-1] INFO  : Vehicle creation request com.gpc.vehiclemanagement.request.VehicleRequest@5cbfe6a3
+2025-02-04 13:47:02 [http-nio-8080-exec-1] INFO  : Vehicle creation response Vehicle [vehicleId=VehicleId [vehicleMake=Nissan, vehicleYear=2029, model=Magnite], submodel=XSD, createdBy=user]
+2025-02-04 15:06:19 [HikariPool-1 housekeeper] WARN  : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h2m58s412ms758µs800ns).
+2025-02-04 15:58:01 [main] INFO  : Starting VehiclemanagementApplication using Java 21.0.2 with PID 5856 (D:\sample_projects\vehiclemanagement\build\classes\java\main started by vaisakh.devi in D:\sample_projects\vehiclemanagement)
+2025-02-04 15:58:01 [main] INFO  : No active profile set, falling back to 1 default profile: "default"
+2025-02-04 15:58:01 [main] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-04 15:58:02 [main] INFO  : Finished Spring Data repository scanning in 62 ms. Found 1 JPA repository interface.
+2025-02-04 15:58:02 [main] INFO  : Tomcat initialized with port 8080 (http)
+2025-02-04 15:58:02 [main] INFO  : Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-04 15:58:02 [main] INFO  : Starting service [Tomcat]
+2025-02-04 15:58:02 [main] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-04 15:58:02 [main] INFO  : Initializing Spring embedded WebApplicationContext
+2025-02-04 15:58:02 [main] INFO  : Root WebApplicationContext: initialization completed in 1473 ms
+2025-02-04 15:58:03 [main] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-04 15:58:03 [main] INFO  : HikariPool-1 - Starting...
+2025-02-04 15:58:03 [main] INFO  : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:vehicle user=SA
+2025-02-04 15:58:03 [main] INFO  : HikariPool-1 - Start completed.
+2025-02-04 15:58:03 [main] WARN  : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Cannot invoke "org.hibernate.annotations.common.reflection.XClass.isAnnotationPresent(java.lang.Class)" because "embeddableClass" is null
+2025-02-04 15:58:03 [main] INFO  : HikariPool-1 - Shutdown initiated...
+2025-02-04 15:58:03 [main] INFO  : HikariPool-1 - Shutdown completed.
+2025-02-04 15:58:03 [main] INFO  : Stopping service [Tomcat]
+2025-02-04 15:58:03 [main] INFO  : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-04 15:58:03 [main] ERROR : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Cannot invoke "org.hibernate.annotations.common.reflection.XClass.isAnnotationPresent(java.lang.Class)" because "embeddableClass" is null
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.gpc.vehiclemanagement.VehiclemanagementApplication.main(VehiclemanagementApplication.java:9)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.hibernate.annotations.common.reflection.XClass.isAnnotationPresent(java.lang.Class)" because "embeddableClass" is null
+	at org.hibernate.boot.model.internal.PropertyBinder.resolveCustomInstantiator(PropertyBinder.java:404)
+	at org.hibernate.boot.model.internal.PropertyBinder.getOrCreateCompositeId(PropertyBinder.java:386)
+	at org.hibernate.boot.model.internal.PropertyBinder.bindId(PropertyBinder.java:348)
+	at org.hibernate.boot.model.internal.PropertyBinder.bind(PropertyBinder.java:320)
+	at org.hibernate.boot.model.internal.PropertyBinder.makePropertyAndBind(PropertyBinder.java:306)
+	at org.hibernate.boot.model.internal.EmbeddableBinder.createEmbeddedProperty(EmbeddableBinder.java:256)
+	at org.hibernate.boot.model.internal.EmbeddableBinder.createCompositeBinder(EmbeddableBinder.java:129)
+	at org.hibernate.boot.model.internal.PropertyBinder.bindBasic(PropertyBinder.java:1098)
+	at org.hibernate.boot.model.internal.PropertyBinder.bindProperty(PropertyBinder.java:913)
+	at org.hibernate.boot.model.internal.PropertyBinder.buildProperty(PropertyBinder.java:811)
+	at org.hibernate.boot.model.internal.PropertyBinder.processElementAnnotations(PropertyBinder.java:732)
+	at org.hibernate.boot.model.internal.EntityBinder.processIdPropertiesIfNotAlready(EntityBinder.java:1088)
+	at org.hibernate.boot.model.internal.EntityBinder.handleIdentifier(EntityBinder.java:419)
+	at org.hibernate.boot.model.internal.EntityBinder.bindEntityClass(EntityBinder.java:251)
+	at org.hibernate.boot.model.internal.AnnotationBinder.bindClass(AnnotationBinder.java:401)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:257)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:281)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:324)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	... 15 common frames omitted
