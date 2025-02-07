@@ -6,6 +6,8 @@ import jakarta.validation.constraints.NotNull;
 
 public class VehicleRequest {
 
+	private int id;
+	
 	@NotEmpty(message = "vehicleMake is required")
     private String vehicleMake;
     
@@ -16,6 +18,14 @@ public class VehicleRequest {
     private String model;
 	
     private String subModel;
+    
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
 
 	public String getVehicleMake() {
 		return vehicleMake;

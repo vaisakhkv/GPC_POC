@@ -46,13 +46,13 @@ public class VehicleController {
         return new ResponseEntity<>(vehicles,HttpStatus.OK);
 	}
 
-	@GetMapping("/{model}/{year}/{make}")
-	public ResponseEntity<Object> getById( @PathVariable String model,  @PathVariable int year,  @PathVariable String make,
+	@GetMapping("/{id}/{model}/{year}/{make}")
+	public ResponseEntity<Object> getById( @PathVariable int id,@PathVariable String model,  @PathVariable int year,  @PathVariable String make,
 			Authentication authentication) {
-		logger.info("Find Vehicle by id request model "+model+", year "+year+", make "+make);
+		logger.info("Find Vehicle by id request id "+id+" model "+model+", year "+year+", make "+make);
 		boolean hasAdminRole = authentication.getAuthorities().stream()
 		          .anyMatch(r -> r.getAuthority().equals(adminRole));
-		VehicleId vehicleId = new VehicleId(make, year, model);
+		VehicleId vehicleId = new VehicleId(id,make, year, model);
 		Optional<Vehicle> vehicle = vehicleService.findById(vehicleId, authentication.getName(),hasAdminRole);
         return new ResponseEntity<>(vehicle,HttpStatus.OK);
 	}
@@ -70,7 +70,7 @@ public class VehicleController {
 	@DeleteMapping("/delete")
 	public ResponseEntity<String> delete( @Valid @RequestBody VehicleRequest vehicle) {
 		logger.info("Delete Vehicle request model -"+ vehicle.toString());
-		VehicleId vehicleId = new VehicleId(vehicle.getVehicleMake(), vehicle.getVehicleYear(), vehicle.getModel());
+		VehicleId vehicleId = new VehicleId(vehicle.getId(),vehicle.getVehicleMake(), vehicle.getVehicleYear(), vehicle.getModel());
 		String status = vehicleService.deleteById(vehicleId);
 		return new ResponseEntity<>(status, HttpStatus.OK);
 	}

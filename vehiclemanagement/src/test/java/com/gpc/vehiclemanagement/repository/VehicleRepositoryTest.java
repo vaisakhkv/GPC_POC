@@ -26,6 +26,7 @@ public class VehicleRepositoryTest {
 	    public void setup(){
 		 	vehicle = new Vehicle();
 			VehicleId id = new VehicleId();
+			id.setId(1);
 			id.setVehicleMake("Maruti");
 			id.setModel("Baleno");
 			id.setVehicleYear(2024);
@@ -59,6 +60,7 @@ public class VehicleRepositoryTest {
 	        // given - precondition or setup
 	 		Vehicle vehicle1 = new Vehicle();
 			VehicleId id = new VehicleId();
+			id.setId(2);
 			id.setVehicleMake("Maruti");
 			id.setModel("Baleno");
 			id.setVehicleYear(2025);
@@ -81,10 +83,20 @@ public class VehicleRepositoryTest {
 	     @Test
 	     public void getVehicleByIdTest(){
 	         // given - precondition or setup
-	         vehicleRepository.save(vehicle);
+	 		Vehicle vehicle1 = new Vehicle();
+			VehicleId id = new VehicleId();
+			id.setId(2);
+			id.setVehicleMake("Maruti");
+			id.setModel("Baleno");
+			id.setVehicleYear(2025);
+			vehicle1.setSubModel("Delta");
+			vehicle1.setVehicleId(id);
+			vehicle1.setCreatedBy("user");
+			
+	         vehicleRepository.save(vehicle1);
 
 	         // when - action or the behaviour that we are going test
-	         Vehicle savedVehicle = vehicleRepository.findById(vehicle.getVehicleId()).get();
+	         Vehicle savedVehicle = vehicleRepository.findById(vehicle1.getVehicleId()).get();
 
 	         // then - verify the output
 	         assertThat(savedVehicle).isNotNull();
@@ -94,14 +106,23 @@ public class VehicleRepositoryTest {
 	     @Test
 	     public void getVehicleByIdAndCreatedByTest(){
 	         // given - precondition or setup
-	 		vehicleRepository.save(vehicle);
+	 		 
+	 		Vehicle vehicle2 = new Vehicle();
+			VehicleId id = new VehicleId();
+			id.setVehicleMake("Maruti");
+			id.setModel("Baleno");
+			id.setVehicleYear(2026);
+			vehicle2.setSubModel("Delta");
+			vehicle2.setVehicleId(id);
+			vehicle2.setCreatedBy("user");
+	 		 
+	 		Vehicle savedVehicle =vehicleRepository.save(vehicle2);
 
 	         // when - action or the
-
-	 		Vehicle savedVehicle = vehicleRepository.findByVehicleIdAndCreatedBy(vehicle.getVehicleId(),vehicle.getCreatedBy()).get();
+	 		Vehicle getVehicle = vehicleRepository.findByVehicleIdAndCreatedBy(savedVehicle.getVehicleId(),savedVehicle.getCreatedBy()).get();
 
 	         // then - verify the output
-	         assertThat(savedVehicle).isNotNull();
+	         assertThat(getVehicle).isNotNull();
 	     }
 	 	 
 	 	@DisplayName("JUnit test for update vehicle operation")

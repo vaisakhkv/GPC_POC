@@ -125,7 +125,7 @@ public class VehicleControllerTest{
         Mockito.when(authenticationManager.authenticate(Mockito.any(UsernamePasswordAuthenticationToken.class))).thenReturn(authentication);
 		
 		Mockito.when(service.findById(id,"user",false)).thenReturn(vehicleResponse);
-		ResponseEntity<Object> actual = testController.getById(id.getModel(), id.getVehicleYear(), id.getVehicleMake(), authentication);
+		ResponseEntity<Object> actual = testController.getById(id.getId(), id.getModel(), id.getVehicleYear(), id.getVehicleMake(), authentication);
 		assertThat(actual).isNotNull();
 	}
 	

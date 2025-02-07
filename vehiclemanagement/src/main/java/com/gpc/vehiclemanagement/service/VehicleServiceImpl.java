@@ -47,11 +47,12 @@ public class VehicleServiceImpl implements VehicleService{
     }
 
     public Vehicle create(VehicleRequest vehicleReq, String username) {
-    	logger.info("Inside service create method");
+    	logger.info("Inside service ucreate method");
+    	Vehicle savedVehicle = null;
     	Vehicle vehicle = convetRequestToModel(vehicleReq);
     	vehicle.setCreatedBy(username);
-        Optional<Vehicle> savedVehicle = repository.findById(vehicle.getVehicleId());
-		if(savedVehicle.isPresent()){
+    	savedVehicle = repository.findByVehicleMakeAndModelAndVehicleYear(vehicle.getVehicleId().getVehicleMake(),vehicle.getVehicleId().getModel(),vehicle.getVehicleId().getVehicleYear());
+    	if(savedVehicle != null){
 	       throw new VehicleAlreadyExistsException(VehicleConstants.RESOURCE_ALLREADY_FOUND);
 	     }
         return repository.save(vehicle);
@@ -68,10 +69,9 @@ public class VehicleServiceImpl implements VehicleService{
 	public Vehicle update(VehicleRequest vehicleReq, String username) {
 		Vehicle vehicle = convetRequestToModel(vehicleReq);
     	vehicle.setCreatedBy(username);
-    	logger.info("Vehicle submodal ----"+vehicle.getSubModel());
+    	logger.info("Vehicle submodal ----"+vehicle.getSubModel(),vehicle.getCreatedBy(),vehicle.getVehicleId());
 		Optional<Vehicle> oldVehicle = repository.findByVehicleIdAndCreatedBy(vehicle.getVehicleId(),username);
 		if(oldVehicle.isPresent()) {
-		vehicle.setCreatedBy(username);
 		repository.save(vehicle);
 		return vehicle;
 		}
@@ -83,13 +83,13 @@ public class VehicleServiceImpl implements VehicleService{
 
 		if(request != null) {
     	VehicleId id = new VehicleId();
+    	id.setId(request.getId());
     	id.setModel(request.getModel());
     	id.setVehicleMake(request.getVehicleMake());
     	id.setVehicleYear(request.getVehicleYear());
     	vehicle.setVehicleId(id);
     	vehicle.setSubModel(request.getSubModel());
 		}
-		
 		return vehicle;
 	}
 	

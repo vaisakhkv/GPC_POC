@@ -4,6 +4,8 @@ import java.io.Serializable;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 
@@ -14,6 +16,10 @@ public class VehicleId implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	
+	@Column(name = "id", nullable = false)
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private int id;
 	
 	@Column(name = "vehicleMake", nullable = false)
     private String vehicleMake;
@@ -29,10 +35,19 @@ public class VehicleId implements Serializable {
 	}
     // Parameterized constructor
 
-	public VehicleId(String vehicleMake, int vehicleYear, String model) {
+	public VehicleId(int id, String vehicleMake, int vehicleYear, String model) {
+		this.id = id;
 		this.vehicleMake = vehicleMake;
 		this.vehicleYear = vehicleYear;
 		this.model = model;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public String getVehicleMake() {
@@ -61,9 +76,11 @@ public class VehicleId implements Serializable {
 
 	@Override
 	public String toString() {
-		return "VehicleId [vehicleMake=" + vehicleMake + ", vehicleYear=" + vehicleYear + ", model="
+		return "VehicleId [id=" + id + ", vehicleMake=" + vehicleMake + ", vehicleYear=" + vehicleYear + ", model="
 				+ model + "]";
 	}
+
+	
 
 	
 }
