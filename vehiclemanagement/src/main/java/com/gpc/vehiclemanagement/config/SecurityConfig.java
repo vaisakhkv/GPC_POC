@@ -56,4 +56,10 @@ return http.build();
         return web -> web.ignoring()
                 .requestMatchers(new AntPathRequestMatcher("/h2-ui/**"));
     }
+    
+    @Bean
+    WebSecurityCustomizer webSecurityCustomizer1() {
+        return web -> web.ignoring()
+                .requestMatchers(new AntPathRequestMatcher("/api/v1/files/**"));
+    }
 }
