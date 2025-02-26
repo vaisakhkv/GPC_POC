@@ -6,6 +6,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -14,6 +15,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.gpc.vehiclemanagement.model.InputFile;
 import com.gpc.vehiclemanagement.service.FileService;
+import com.gpc.vehiclemanagement.service.GcsFileService;
 
 import lombok.RequiredArgsConstructor;
 
@@ -26,6 +28,14 @@ public class FileController {
 
     @Autowired
     private FileService fileService;
+    
+    @Autowired
+    private GcsFileService gcsFileService;
+
+    @GetMapping("/read-file")
+    public String readFile(@RequestParam String bucketName, @RequestParam String fileName) {
+        return gcsFileService.readFile(bucketName, fileName);
+    }
 
     @PostMapping(consumes = {MediaType.MULTIPART_FORM_DATA_VALUE})
     public List<InputFile> addFile(@RequestParam("files")MultipartFile[] files){
